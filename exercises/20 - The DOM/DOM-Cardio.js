@@ -8,7 +8,7 @@ const ul = `<ul>
     <li>one</li>
     <li>two</li>
     <li>three</li>
-</ul>`
+</ul>`;
 
 div.innerHTML = ul;
 
@@ -28,9 +28,10 @@ div.appendChild(img);
 const myHTML = `
     <div>
         <p>Paragraph One</p>
-        <p>Paragraph Two</p>
+        <p>Paragraph Two</p> 
     </div>
-`
+`;
+
 const ulElement = div.querySelector('ul');
 
 ulElement.insertAdjacentHTML('beforebegin', myHTML);
@@ -45,20 +46,20 @@ myDiv.firstElementChild.remove();
 const cards = document.createElement('div');
 cards.classList.add('cards');
 
-
 function generatePlayerCard(name, age, height) {
-    const html = `
+  const html = `
     <div class='playerCard'>
     <h2>${name} - ${age}</h2>
-    <p>Their height is ${height} and they are ${age} years old.  In dog  years this person would be ${age * 7}.  That would be a tall dog!
+    <p>Their height is ${height} and they are ${age} years old.In dog  years this person would be ${
+    age * 7
+  }.  That would be a tall dog!
     </p>
     <button class='delete' type='button'>&times; Delete</button>
     </div>
     `;
 
-    return html;
-    
-};
+  return html;
+}
 
 let cardsHTML = generatePlayerCard('Jon', 22, 70);
 cardsHTML += generatePlayerCard('Ron', 32, 78);
@@ -72,8 +73,8 @@ div.insertAdjacentElement('beforebegin', cards);
 const buttons = cards.querySelectorAll('.delete');
 
 function deleteCard(event) {
-    const buttonThatGotClicked = event.currentTarget;
-    buttonThatGotClicked.closest('.playerCard').remove();
+  const buttonThatGotClicked = event.currentTarget;
+  buttonThatGotClicked.closest('.playerCard').remove();
 }
 
 buttons.forEach(button => button.addEventListener('click', deleteCard));
