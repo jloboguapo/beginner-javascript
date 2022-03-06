@@ -5,11 +5,11 @@ const ob = new IntersectionObserver(obCallBack, {
   threshold: 1,
 });
 
+ob.observe(terms.lastElementChild);
+
 function obCallBack(payload) {
   if (payload[0].intersectionRatio === 1) {
     button.disabled = false;
     ob.unobserve(terms.lastElementChild);
   }
 }
-
-ob.observe(terms.lastElementChild);
