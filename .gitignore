@@ -3,4 +3,3 @@ node_modules/
 haters/
 .cache/
 dist/
-package-lock.json
