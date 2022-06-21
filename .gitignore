@@ -3,4 +3,4 @@ node_modules/
 haters/
 .cache/
 dist/
-.gitignore
+package-lock.json
