@@ -20,9 +20,8 @@ function ask(options) {
         <label>${options.title}</label>
         <input type="text" name="input" />
         <button type="submit">Submit</button>
-       </fieldset>;
-
-    `
+       </fieldset>
+       `
     );
 
     if (options.cancel) {
