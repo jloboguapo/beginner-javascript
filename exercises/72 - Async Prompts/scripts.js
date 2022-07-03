@@ -18,9 +18,10 @@ function ask(options) {
       'afterbegin',
       `<fieldset>
         <label>${options.title}</label>
-        <input type="text" name="input"/>
+        <input type="text" name="input" />
         <button type="submit">Submit</button>
-    </fieldset>
+       </fieldset>;
+
     `
     );
 
