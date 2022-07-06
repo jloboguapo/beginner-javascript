@@ -1,6 +1,6 @@
-import { jokeButtonSpan, loader } from './elements.js';
+import { jokeButtonSpan } from './elements.js';
 
-export async function fetchJoke() {
+export async function fetchJoke(loader) {
   loader.classList.remove('hidden');
   jokeButtonSpan.classList.add('hidden');
   const response = await fetch('https://icanhazdadjoke.com', {
