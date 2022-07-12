@@ -6,3 +6,5 @@ dist/
 .parcel-cache/
 package-lock.json
 exercises/75 - CORS and Recipes/package-lock.json
+yarn.lock
+exercises/84 - Web Speech Colour Game/yarn.lock
